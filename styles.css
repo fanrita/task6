@@ -1,0 +1,403 @@
+body {
+    margin: 0;
+    background-color: lightgrey;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.navbar-header {
+    background-image: url("kinobase/assets/img/navbar-grey.png");
+    color: #5e5e5e;
+    display: block;
+    position: sticky;
+    text-align: center;
+    overflow: hidden;
+    height: 30px;
+}
+
+.logo {
+    padding-left: 10%;
+    display: inline-block;
+    float: left;
+}
+.logo p {
+    margin: 0;
+    padding: 0;
+}
+
+.main-logo {
+    font-size: 22px;
+}
+.sublogo {
+    font-size: 14px;
+}
+
+.topnavbar {
+    display: inline-block;
+    float: right;
+    padding-right: 2%;
+    font-size: 0;
+}
+
+.topnavbar-link {
+    color: #5e5e5e;
+    text-decoration: none;
+    border: solid #2e2e2e;
+    border-width: 0 1px;
+    height: 30px;
+    margin-left: -1px;
+    font-size: 12px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.user-navigation {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background-image: url("kinobase/assets/img/navbar-blue.png");
+    color: white;
+    float: left;
+    padding-left: 10%;
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+.user-navigation-link {
+    text-decoration: none;
+    color: white;
+}
+
+.decoration-search-icon:before {
+    background-size: 40px auto;
+    position: absolute;
+    display: inline-block;
+    background-image: url("kinobase/assets/img/corner.png");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    top: 6%;
+    left: 7.5%;
+    content: "";
+}
+
+.pipe:before {
+    vertical-align: middle;
+    content: "|";
+    font-size: 14px;
+    color: white;
+    padding: 0 5px 0 3px;
+}
+
+.search {
+    position: relative;
+    float: right;
+    padding-right: 6%;
+}
+
+.search-label{
+    position: absolute;
+    display: inline-block;
+    margin-left: -57px;
+    border: solid #5e5e5e;
+    border-width: 0 1px;
+    padding: 0 7px;
+    height: 24px;
+}
+
+.search-text-input {
+    border-color: transparent;
+    border-radius: 3px;
+    width: 290px;
+}
+
+.search-hint {
+    text-align: right;
+    font-size: 8px;
+}
+.search:before{
+    background-size: 60px auto;
+    position: absolute;
+    display: inline-block;
+    background-image: url("kinobase/assets/img/corner.png");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    top: -25%;
+    left: -9%;
+    content: "";
+}
+
+.search:after{
+    background-size: 60px auto;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-image: url("kinobase/assets/img/search-corner.png");
+    background-repeat: no-repeat;
+    top: -62.187496185302727269%;
+    left: 74%;
+    content: "";
+}
+
+
+
+
+
+
+
+
+.preview-gallery {
+    position: relative;
+    background: url("kinobase/assets/img/carousel1.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.preview-gallery:before, .preview-gallery:after {
+    position: absolute;
+    display: inline-block;
+    background-image: url("kinobase/assets/img/bg-darker.png");
+    background-size: 8px auto;
+    height: 8px;
+    width: 100%;
+    content:"";
+}
+
+
+.preview-description {
+    margin-left: 58%;
+    color: white;
+    background-color: transparent;
+    font-size: 8px;
+    padding: 15px;
+    width: 30%;
+}
+
+.text-layout, .digit-preview, .preview-rating, .on-site, .date{
+    display: inline-block;
+}
+
+h4 {
+    margin: 0;
+}
+.preview-text {
+    background-color: black;
+    border: 2px transparent solid;
+    border-radius: 6px;
+    margin-bottom: 3px;
+}
+
+.digit-preview {
+    font-size: 40px;
+    color: black;
+}
+
+.preview-gradient {
+    background-image: linear-gradient(lightgrey, black, white);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    margin-top: 2px;
+    margin-left: 1px;
+}
+
+.preview-rating {
+    font-size: 10px;
+}
+
+.preview-rating:before {
+    background: url("kinobase/assets/img/rating.png") no-repeat;
+    display: inline-block;
+    width: 60px;
+    height: 9px;
+    background-size: 90% auto;
+    margin-right: 4px;
+    content: "";
+}
+
+.preview-image-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+
+.image-gallery {
+    display: block;
+    width: 30%;
+    max-width: 173px;
+    height: auto;
+    border: 1px solid white;
+}
+
+.arrow {
+    width: 100%;
+    height: 100%;
+}
+
+.preview-arrow {
+    position: absolute;
+    background: white url("kinobase/assets/img/arrow-left.png") no-repeat center center;
+    background-size: 40% auto;
+    border: 3px transparent solid;
+    border-radius: 50%;
+    height: 20px;
+}
+.arrow-prev {
+    left:10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-next {
+    right:10%;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+            "prewItem prewItem updates"
+            "filmDescr mainPart new";
+}
+
+.top-part {
+    grid-area: prewItem;
+    display: flex;
+}
+
+.preview-item {
+    position: relative;
+    margin: 10px;
+}
+
+.image-title {
+    height: 6%;
+}
+
+.preview-image-wrapper:before {
+    background: url("kinobase/assets/img/rating.png") no-repeat;
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 9px;
+    background-size: 90% auto;
+    content: "";
+}
+
+.preview-image-wrapper:after {
+    background-size: 60px auto;
+    position: absolute;
+    display: flex;
+    margin-top: -40px;
+    background-image: url("kinobase/assets/img/corner.png");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    content: "";
+}
+
+.text-preview-image:before {
+    background-size: contain;
+    position: absolute;
+    display: flex;
+    background: url("kinobase/assets/img/shadow.png") no-repeat;
+    width: 100%;
+    height: 10px;
+    margin-top: -10px;
+    content: "";
+}
+.updates, .film-description, .news {
+    grid-area: updates;
+    background-color: #414141;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    font-size: 10px;
+}
+.title {
+    background-size: cover;
+    width: 100%;
+    background: url("kinobase/assets/img/sub-header.png") no-repeat;
+    text-align: right;
+    background-size: cover;
+    height: 50px;
+    line-height: 30px;
+}
+
+
+.updates-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+
+.updates-item:before {
+    position: absolute;
+    overflow: hidden;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    content:"";
+}
+
+.updates-item {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+
+}
+.updates-title, .updates {
+    display: inline-block;
+}
+
+.updates-gallery {
+    float: left;
+    width: 30%;
+    padding-right: 5px;
+}
+.updates-text {
+    float: right;
+    width: 70%;
+}
+
+.film-description {
+    grid-area: filmDescr;
+}
+
+.news {
+    grid-area: new;
+}
+
+.image-gallery {
+    border: 3px solid darkgray;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+                "prewItem"
+                "mainPart";
+    }
+
+    .updates, .film-description, .news {
+        display: none;
+    }
+
+    .film-preview {
+        grid-area: prewItem;
+        display: inline-block;
+    }
+}
